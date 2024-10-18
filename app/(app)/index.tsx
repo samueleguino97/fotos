@@ -53,7 +53,7 @@ function Index() {
   }
   return (
     <Pressable
-      className="flex-1 max-w-96 w-full mx-auto"
+      className="flex-1 max-w-[500px] w-full mx-auto"
       onPress={() => {
         if (Platform.OS !== "web") Keyboard.dismiss();
       }}

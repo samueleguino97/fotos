@@ -59,7 +59,7 @@ function Index() {
   }
   return (
     <SafeAreaView className="bg-orange-50 flex-1   mx-auto">
-      <View className="p-4 flex-1 max-w-96 w-full">
+      <View className="p-4 flex-1 max-w-[500px] w-full">
         <View className="flex flex-col items-center justify-center">
           {Platform.OS === "web" ? (
             <img

@@ -15,6 +15,7 @@ export default function TabLayout() {
       }}
     >
       <Stack.Screen name="index" />
+      <Stack.Screen name="home" options={{ headerShown: false }} />
       <Stack.Screen
         name="camera"
         options={{ headerShown: false, presentation: "modal" }}
