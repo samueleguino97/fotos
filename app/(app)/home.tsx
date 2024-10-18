@@ -74,9 +74,16 @@ function Index() {
           </Text>
         </View>
         <View className="flex-1 p-4 flex flex-col items-center justify-center ">
-          <Text className="text-gray-600 text-center mb-2">
-            Espectaculares las fotos que tomaste hasta ahora, no te detengas!!
-          </Text>
+          {photos.length === 0 && (
+            <Text className="text-gray-400 text-center mb-2">
+              No tienes fotos aún, empieza a tomar!
+            </Text>
+          )}
+          {photos.length > 0 && (
+            <Text className="text-gray-600 text-center mb-2">
+              Espectaculares las fotos que tomaste hasta ahora, no te detengas!!
+            </Text>
+          )}
           <ScrollView
             horizontal
             className="w-full"
@@ -104,11 +111,6 @@ function Index() {
                 )}
             </View>
           </ScrollView>
-          {photos.length === 0 && (
-            <Text className="text-gray-400">
-              No tienes fotos aún, empieza a tomar!
-            </Text>
-          )}
         </View>
         <Link href="/camera" className="mx-auto">
           <View className="p-3">
