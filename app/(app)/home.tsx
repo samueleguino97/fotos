@@ -61,13 +61,21 @@ function Index() {
     <SafeAreaView className="bg-orange-50 flex-1   mx-auto">
       <View className="p-4 flex-1 max-w-96 w-full">
         <View className="flex flex-col items-center justify-center">
-          <Image
-            source="https://brianykari.guardalafecha.app/logo.png"
-            placeholder={{ blurhash }}
-            contentFit="contain"
-            className="w-full h-40"
-            transition={1000}
-          />
+          {Platform.OS === "web" ? (
+            <img
+              src="https://brianykari.guardalafecha.app/logo.png"
+              className="w-full h-40 object-contain"
+              alt="logo"
+            />
+          ) : (
+            <Image
+              source="https://brianykari.guardalafecha.app/logo.png"
+              placeholder={{ blurhash }}
+              contentFit="contain"
+              className="w-full h-40"
+              transition={1000}
+            />
+          )}
 
           <Text className="text-2xl font-medium text-slate-500">
             Bienvenido {name}

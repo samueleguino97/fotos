@@ -115,7 +115,7 @@ function Camera() {
           <ActivityIndicator size="large" color="white" />
         </View>
       )}
-      <SafeAreaView className="flex-1 items-center justify-end ">
+      <SafeAreaView className="flex-1 items-center justify-end pb-8">
         <Pressable
           onPress={() => {
             takePhoto();

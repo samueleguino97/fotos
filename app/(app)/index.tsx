@@ -64,7 +64,7 @@ function Index() {
             {Platform.OS === "web" ? (
               <img
                 src="https://brianykari.guardalafecha.app/logo.png"
-                className="w-full h-40 contain"
+                className="w-full h-40 object-contain"
                 alt="logo"
               />
             ) : (
