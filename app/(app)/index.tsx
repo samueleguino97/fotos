@@ -59,7 +59,10 @@ function Index() {
       }}
     >
       <SafeAreaView className="bg-orange-50 flex-1 ">
-        <KeyboardAvoidingView className="p-4 flex-1" behavior="padding">
+        <KeyboardAvoidingView
+          className="p-4 flex-1"
+          behavior={Platform.OS === "web" ? undefined : "padding"}
+        >
           <View className="flex flex-col items-center justify-center">
             {Platform.OS === "web" ? (
               <img
